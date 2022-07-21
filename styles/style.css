@@ -45,14 +45,6 @@ h1 {
     margin-bottom: 0%;
 }
 
-@media screen and (max-width: 576px) {
-    .top-banner {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-}
-
 /* main section starts */
 .middle-section {
     display: flex;
@@ -76,7 +68,7 @@ h1 {
     width: 68%;
     font-size: 1.5em;
     border: 1px solid cornsilk;
-    background-color: white;
+    background-color: rgba(203, 192, 192, 0.971);
     padding: 15px;
     border-radius: 15px;
     text-decoration: none;
@@ -118,6 +110,65 @@ h1 {
     max-width: 100%;
 }
 
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-top: 45px;
+    padding-top: 35px;
+    padding-bottom: 0%;
+
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 3%;
+    margin-left: 3%;
+
+}
+
+nav li:hover {
+    background-color: rosybrown;
+    cursor: alias;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    padding-bottom: 10%;
+}
+
+@media screen and (max-width: 576px) {
+    .top-banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+}
+
 @media screen and (max-width: 576px) {
     .middle-section {
         display: block;
@@ -126,6 +177,11 @@ h1 {
     .container-2 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    nav>ul {
+        display: block;
+
     }
 }
 
