@@ -12,6 +12,10 @@ h1 {
     margin-bottom: 0%;
 }
 
+h2 {
+    font-size: 2em;
+}
+
 .top-banner {
     display: flex;
     justify-content: center;
@@ -111,7 +115,14 @@ h1 {
     max-width: 100%;
 }
 
+.view-all {
+    display: flex;
+    margin-left: 35%;
+    margin-right: 35%;
+    justify-content: center;
+    align-items: center;
 
+}
 
 footer {
     position: relative;
@@ -192,9 +203,12 @@ footer p {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .view-all {
+        display: none;
+    }
+
     nav>ul {
         display: block;
-
     }
 }
 
@@ -218,5 +232,9 @@ footer p {
 @media screen and (min-width:993px) {
     .container-1 {
         background-color: black;
+    }
+
+    .view-all {
+        display: none;
     }
 }
