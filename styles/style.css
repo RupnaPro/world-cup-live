@@ -1,0 +1,43 @@
+body {
+    max-width: 1321px;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 5vw;
+    color: white;
+    margin-left: 20px;
+}
+
+.top-banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid red;
+}
+
+.top-banner .container {
+    width: 50%;
+}
+
+.container p {
+    margin-left: 10px;
+}
+
+.link-button {
+    text-decoration: none;
+    color: white;
+    background-color: orangered;
+    padding: 10px 25px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.container img {
+    height: 100%;
+    position: left;
+}
