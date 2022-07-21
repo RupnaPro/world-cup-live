@@ -194,7 +194,13 @@ footer p {
         height: 100%;
     }
 
-    .short-text {
+    .mini-text {
+        width: 200px;
+        overflow: hidden;
+    }
+
+    #short-text {
+        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
