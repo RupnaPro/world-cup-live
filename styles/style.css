@@ -9,15 +9,16 @@ h1 {
     font-size: 5vw;
     color: white;
     margin-left: 20px;
+    margin-bottom: 0%;
 }
 
 .top-banner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
     background-color: black;
     border-radius: 20px;
     color: white;
-    border: 1px solid red;
+    margin-bottom: 100px;
 }
 
 .top-banner .container {
@@ -25,7 +26,7 @@ h1 {
 }
 
 .container p {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .link-button {
@@ -34,10 +35,18 @@ h1 {
     background-color: orangered;
     padding: 10px 25px;
     border-radius: 8px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .container img {
-    height: 100%;
+    max-width: 100%;
     position: left;
+}
+
+@media screen and (max-width: 576px) {
+    .top-banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
